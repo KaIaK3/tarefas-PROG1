@@ -1,0 +1,45 @@
+---------------
+0. arquivos iniciais na pasta rascunhos/helloqt:
+
+* ex6.cpp
+* ex6.ui
+
+Arquivos disponíveis no dracobox
+
+---------------
+1. gerar arquivo de projeto na pasta helloqt:
+
+qmake -project
+
+---------------
+2. ajustar o arquivo de projeto helloqt.pro:
+$ vi helloqt.pro
+
+Adicionar linha:
+QT += gui widgets
+
+Alterar linhas:
+TARGET = ex6.out
+
+Se necessário, alterar:
+SOURCES += ex6.cpp
+
+---------------
+3. gerar o Makefile com:
+$ qmake helloqt.pro
+
+---------------
+4. gerar biblioteca ui_ex6.h e o binário ex6.out com:
+$ make
+
+------------------------------------------------------
+Total 7 arquivos:
+
+1. ex6.cpp (arquivo digitado)
+2. ex6.ui (arquivo digitado)
+3. helloqt.pro (arquivo gerado pelo qmake -project)
+4. Makefile (arquivo gerado pelo qmake helloqt.pro)
+5. ui_ex6.h (arquivo gerado pelo make)
+6. ex6.out (arquivo gerado pelo make)
+7. push-button-ui.png (arquivo imagem exemplo de botao)
+
