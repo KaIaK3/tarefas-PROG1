@@ -1,0 +1,24 @@
+algoritmo divisao;
+
+variáveis
+a, b, c : real;
+fim-variáveis
+
+início
+
+imprima("Escreva um numero: ");
+a:= leia();
+
+imprima("Escreva outro numero: ");
+b:= leia();
+
+se(b = 0)
+então
+imprima("erro: zero não pode carakkk, coloca outro numero ai");
+retorne 0;
+fim-se
+
+c:= a/b;
+
+     imprima("O resultado e: ", c);
+fim
